@@ -7,17 +7,19 @@
     <style> <!-- 123 왜 이건 주석처리 된 표시가 안되지?? 근데 주석이긴 함;;--> 
         h1 {
             color : cyan;
+            text-align: center;
         }
         a {
             color: green;
+            text-decoration: none;
         }
-    </style>
+    </style> <!-- CSS임을 나타내는 태그-->
 </head>
 <body>
-    <a href="hyozuko.html">메인페이지로</a>
     <div>
-        <h1>Developer_HYOZUKO.CSS</h1>
+        <a href="hyozuko.html" style="color:red">메인페이지로</a>
     </div>
+    <h1 style="text-decoration: underline;">Developer_HYOZUKO.CSS</h1>
     <div>
         <h3>공부한 내용</h3>
     </div>
@@ -26,3 +28,10 @@
     </div>
 </body>
 </html>
+
+<!-- style 태그와 css는 작성 방법은 같으나 적용 방식과 범위가 다르다! feat.chatGPT-->
+ <!-- CSS의 형태
+ selector(선택자) {
+    property(속성) : value(값) == declaration(선언문)
+ } 
+ -->
