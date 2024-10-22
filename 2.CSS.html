@@ -4,31 +4,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Developer_HYOZUKO.CSS</title>
-    <style>
-        h1 {
-            text-align: center;
-        }
-        h3 {
-            color : cyan;
-            text-align: center;
-        }
+    <style> /* CSS임을 나타내는 태그 */
         a {
-            color: green;
+            color: black;
             text-decoration: none;
         }
-    </style> <!-- CSS임을 나타내는 태그-->
+        .saw {
+            /* "."을 포함함으로 class가 saw인 항목들을 지정함 */
+            color: gray;
+        }
+        #active {
+            color: rgb(244, 128, 244);
+        }
+        /* class 선택자를 "." 표현한다면, id 선택자는 "#"으로 표현한다.
+        또한, 순서에 상관없이 id선택자가 적용된다.
+        우선순위 : id > class > tag
+        id는 중복되지 않으므로 최우선순위, class는 중복이 가능하나 a보단 상위 개념*/
+        .active {
+            color: red;
+        }
+        /* active가 saw보다 나중에 선언되었기 때문에 빨간색으로 표시됨
+        따라서 순서를 바꾼다면 회색으로 출력됨 */
+    </style>
 </head>
 <body>
-    <a href="hyozuko.html" style="color:red">메인페이지로</a>
+    <!-- <a href="hyozuko.html" style="color:red">메인페이지로</a>
     <h1 style="text-decoration: underline;">Developer_HYOZUKO.CSS</h1>
     <h3>공부한 내용</h3>
-    <p><a href="https://www.freecodecamp.org/korean/news/what-is-html-definition-and-meaning/" target="_blank" title="HTML이란 무엇인가 - 하이퍼텍스트 마크업 언어의 정의와 의미">HTML이란 무엇인가-하이퍼텍스트 마크업 언어의 정의와 의미</a></p>
+    <p><a href="https://www.w3schools.com/cssref/css_selectors.php" class="saw" target="_blank">css 선택자 사용방법</a></p>
+    <p><a href="index.html" class="saw" id="active">연습용 링크</a></p>
+    <p><a href="index.html">연습용 링크</a></p> -->
 </body>
 </html>
 
-<!-- style 태그와 css는 작성 방법은 같으나 적용 방식과 범위가 다르다! feat.chatGPT-->
- <!-- CSS의 형태
+<!-- style 태그와 css는 작성 방법은 같으나 적용 방식과 범위가 다르다! feat.chatGPT
+CSS의 형태
  selector(선택자) {
     property(속성) : value(값) == declaration(선언문)
- } 
- -->
+ } -->

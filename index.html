@@ -3,46 +3,82 @@
     <head>
         <meta charset="UTF-8">
         <title>Developer_HYOZUKO</title>
-        <!-- <style>
-            a {
-                color : red
+        <style>
+            body {
+                margin: 0px;
             }
-        </style> 왜 이 코드는 적용 안됨??-->
+            h1 {
+                border-bottom: 4px solid black;
+                padding-top: 4px;
+                padding-bottom: 8px;
+                text-align: center;
+                margin-bottom: 0px;
+            }
+            h3 {
+                margin-top: 30px;
+                margin-bottom: 0px;
+            }
+            .reason_total {
+                width: 550px;
+                border-right: 2px black solid;
+                padding: 20px
+            }
+            .reason_title {
+                margin-top: 0px;
+            }
+            .url_tag {
+                margin-bottom: 30px;
+            }
+            #grid {
+                border: solid 5px pink;
+                display: grid;
+                grid-template-columns: 590px auto;
+            }
+            .plan {
+                padding-left: 20px;
+            }
+        </style>
     </head>
 
     <body>
         <h1>FrontEnd_Developer. HYOZUKO</h1>
-        <h3>개발을 공부하는 이유</h3>
-        <ol>
-            <li>더 나이들기 전에 도전을 해야한다는 생각</li>
-            <li>현실에 안주하지 않고 공부할 수 있는 직업적인 환경</li>
-            <li>현업(육체노동)과는 별개의 노동(정신노동)을 수행할 수 있다는 의지</li>
-            <li>프론트엔드 공부와 동시에 사이드 프로젝트를 할 수 있는 좋은 기회</li>
-        </ol>
-        <h3>프론트엔드 공부 계획</h3>
-        <ul>
-            <li><a href="1.HTML.html">HTML</a></li>
-            <ol>
-                <li><b><a style="color : red;">유튜브</a></b> "생활코딩"님의 <a href="https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb&index=1" target="_blank" title="WEB1-HTML&INTERNET"> 강의</a></li>
-                <li><b><a style="color : green;">인프런</a></b> "생활코딩"님의 <a href="https://www.inflearn.com/course/html-%EA%B8%B0%EC%B4%88/dashboard" target="_blank" title="생활코딩 - HTML 기초">강의</a></li>
-            </ol>
-                <li><font color="cyan">CSS</font></li> <!-- 폰트태그 -->
-                <li><a href="2.CSS.html" title="CSS">CSS</a></li>
-            <ol>
-                <li><b><a style="color : red;">유튜브</a></b> "생활코딩"님의 <a href="https://www.youtube.com/watch?v=Ok0bBJPtgJI&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B" target="_blank" title="WEB2-CSS">강의</a></li>
-                <li><b><a style="color : green;">인프런</a></b> "생활코딩"님의 <a href="https://www.inflearn.com/course/css-%EA%B8%B0%EB%B3%B8%EB%B6%80%ED%84%B0-%ED%99%9C%EC%9A%A9%EA%B9%8C%EC%A7%80?attributionToken=iQHwiAoMCPHSzbgGEP_skIUBEAEaJDY3MTM3NGY1LTAwMDAtMmVmZS1hYjMwLWY0ZjVlODA1Y2M0MCoHMTE5MzE5NjIwo4CXIrW3jC2o5aotmNa3LcLwnhXFy_MXjr6dFdSynRWb1rctkPeyMI6RyTCa7sYwOg5kZWZhdWx0X3NlYXJjaEgBaAF6AnNp" target="_blank" title="CSS 기본부터 활용까지">강의</a></li>
-            </ol>
-            <li>JavaScript</li>
-            <ol>
-                <li><b><a style="color : green;">인프런</a></b> "생활코딩"님의 <a href="https://www.inflearn.com/course/%EC%A7%80%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%96%B8%EC%96%B4-%EA%B8%B0%EB%B3%B8?attributionToken=iQHwiAoMCKvSzbgGEMjjl-ICEAEaJDY3MTM2OGM0LTAwMDAtMjZjZC04MzE2LWY0ZjVlODBkOWE5YyoHMTE5MzE5NjIwo4CXIqjlqi23t4wtmu7GMMLwnhXFy_MXjr6dFdSynRWQ97IwjpHJMJvWty2Y1rctOg5kZWZhdWx0X3NlYXJjaEgBaAF6AnNp" target="_blank" title="생활코딩 - 자바스크립트(JavaScript) 기본">강의</a></li>
-                <li><b><a style="color : green;">인프런</a></b> "효빈 Hyobin"님의 <a href="https://www.inflearn.com/course/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%B2%AB%EA%B1%B8%EC%9D%8C/dashboard" target="_blank" title="웹 프론트엔드를 위한 자바스크립트 첫걸음">강의</a> </li>
-            </ol>
-        </ul>
-        <h3>사이드 프로젝트 목록</h3>
-        <ul>
-            <li>반려동물 사진 공유 서비스 "내 새끼 니도 이쁘지?"</li>
-            <li>UTM 카테고라이징 서비스 "유렉카"</li>
-        </ul>
+        <div id="grid">
+            <div class="reason_total">
+                <h3 class="reason_title">개발을 공부하는 이유</h3>
+                <ol>
+                    <li>더 나이들기 전에 도전을 해야한다는 생각</li>
+                    <li>현실에 안주하지 않고 공부할 수 있는 직업적인 환경</li>
+                    <li>현업(육체노동)과는 별개의 노동(정신노동)을 수행할 수 있다는 의지</li>
+                    <li>프론트엔드 공부와 동시에 사이드 프로젝트를 할 수 있는 좋은 기회</li>
+                </ol>
+            </div>
+            <div class="plan">
+                <h3>프론트엔드 공부 계획</h3>
+                <ul>
+                    <li><a href="1.HTML.html">HTML</a></li>
+                    <ol class="url_tag">
+                        <li><b><a style="color : red;">유튜브</a></b> "생활코딩"님의 <a href="https://www.youtube.com/watch?v=tZooW6PritE&list=PLuHgQVnccGMDZP7FJ_ZsUrdCGH68ppvPb&index=1" target="_blank" title="WEB1-HTML&INTERNET"> 강의</a></li>
+                        <li><b><a style="color : green;">인프런</a></b> "생활코딩"님의 <a href="https://www.inflearn.com/course/html-%EA%B8%B0%EC%B4%88/dashboard" target="_blank" title="생활코딩 - HTML 기초">강의</a></li>
+                    </ol>
+                        <!-- <li><font color="cyan">CSS</font></li> -->
+                        <li><a href="2.CSS.html" title="CSS">CSS</a></li>
+                    <ol class="url_tag">
+                        <li><b><a style="color : red;">유튜브</a></b> "생활코딩"님의 <a href="https://www.youtube.com/watch?v=Ok0bBJPtgJI&list=PLuHgQVnccGMAnWgUYiAW2cTzSBywFO75B" target="_blank" title="WEB2-CSS">강의</a></li>
+                        <li><b><a style="color : green;">인프런</a></b> "생활코딩"님의 <a href="https://www.inflearn.com/course/css-%EA%B8%B0%EB%B3%B8%EB%B6%80%ED%84%B0-%ED%99%9C%EC%9A%A9%EA%B9%8C%EC%A7%80?attributionToken=iQHwiAoMCPHSzbgGEP_skIUBEAEaJDY3MTM3NGY1LTAwMDAtMmVmZS1hYjMwLWY0ZjVlODA1Y2M0MCoHMTE5MzE5NjIwo4CXIrW3jC2o5aotmNa3LcLwnhXFy_MXjr6dFdSynRWb1rctkPeyMI6RyTCa7sYwOg5kZWZhdWx0X3NlYXJjaEgBaAF6AnNp" target="_blank" title="CSS 기본부터 활용까지">강의</a></li>
+                    </ol>
+                    <li>JavaScript</li>
+                    <ol class="url_tag">
+                        <li><b><a style="color : green;">인프런</a></b> "생활코딩"님의 <a href="https://www.inflearn.com/course/%EC%A7%80%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%96%B8%EC%96%B4-%EA%B8%B0%EB%B3%B8?attributionToken=iQHwiAoMCKvSzbgGEMjjl-ICEAEaJDY3MTM2OGM0LTAwMDAtMjZjZC04MzE2LWY0ZjVlODBkOWE5YyoHMTE5MzE5NjIwo4CXIqjlqi23t4wtmu7GMMLwnhXFy_MXjr6dFdSynRWQ97IwjpHJMJvWty2Y1rctOg5kZWZhdWx0X3NlYXJjaEgBaAF6AnNp" target="_blank" title="생활코딩 - 자바스크립트(JavaScript) 기본">강의</a></li>
+                        <li><b><a style="color : green;">인프런</a></b> "효빈 Hyobin"님의 <a href="https://www.inflearn.com/course/%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%B2%AB%EA%B1%B8%EC%9D%8C/dashboard" target="_blank" title="웹 프론트엔드를 위한 자바스크립트 첫걸음">강의</a> </li>
+                    </ol>
+                </ul>
+                <h3>사이드 프로젝트 목록</h3>
+                <ul>
+                    <li>반려동물 사진 공유 서비스 "내 새끼 니도 이쁘지?"</li>
+                    <li>UTM 카테고라이징 서비스 "유렉카"</li>
+                </ul>
+            </div>
+        </div>
         <img src="nezuko.jpg" width="30%">
         <img src="nezuko.jpg" width="30%">
     </body>
